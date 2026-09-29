@@ -1,0 +1,3 @@
+Colocá acá los archivos reales (datasets .xlsx/.csv, promptbooks .pdf, etc.).
+Luego, en assets/js/data.js, agregá el campo url a cada recurso apuntando a este archivo,
+por ejemplo:  { name:"Presupuesto de obra.xlsx", type:"Archivo de trabajo", meta:"Planilla · 3 hojas", kind:"archivo", url:"assets/files/presupuesto-de-obra.xlsx" }
