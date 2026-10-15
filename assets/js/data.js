@@ -65,12 +65,12 @@ const CHALLENGES = [
   {
   id:"turismo-prompt-imagen-promo",
   privacidad:"Este brief tiene datos internos de un negocio: tarifas, ocupación y el contacto de la dueña. Con un brief real, compartí con la IA solo la información visual que necesita y dejá afuera los datos de la empresa y de las personas, como viste en el curso.",
-  title:"Prompteá la imagen de la promo de primavera de unas cabañas",
-  sector:"turismo", course:"introduccion-ia", difficulty:"inicial", duration:15,
+  title:"Armá con IA el prompt de la imagen para una promo de primavera",
+  sector:"turismo", course:"introduccion-ia", difficulty:"inicial", duration:30,
   skills:["crear","prompting","comunicar"], tools:["ia","chatgpt","gemini"],
   keywords:["prompt de imagen","generación de imágenes","brief","instagram","redes sociales","promoción","cabañas","primavera"],
   description:"Unas cabañas de El Bolsón necesitan la imagen para su promo de primavera en Instagram. Convertí el brief en un buen prompt de imagen y mejoralo hasta que el resultado cumpla lo pedido.",
-  video:{ caso:"", resolucion:"" },
+  video:{ caso:"https://youtu.be/nXeh3MzQCaM", resolucion:"" },
   context:"Trabajás en la recepción de Cabañas Arroyo Blanco, un complejo de seis cabañas de madera en El Bolsón, Río Negro. La dueña, Laura, quiere lanzar en octubre la promo \"Primavera en la cordillera\" (3 noches al precio de 2) y necesita una imagen para Instagram. No hay presupuesto para un fotógrafo, así que te pidió que la generes con IA. Te pasó un brief con todo lo que tiene que transmitir la imagen, pero también con datos internos del negocio.",
   challenge:"A partir del brief, escribí un prompt para generar la imagen del posteo de la promo con una herramienta de IA. Probalo, revisá el resultado contra lo que pide el brief y mejoralo al menos una vez. Al final, dejá tu prompt final y explicá qué cambiaste y por qué.",
   deliverables:[
@@ -86,9 +86,9 @@ const CHALLENGES = [
   ],
   resources:[
     { name:"Brief creativo — Cabañas Arroyo Blanco.pdf", type:"Material de trabajo", meta:"PDF · brief de 3 páginas",
-      kind:"material", url:"assets/files/brief-cabanas-arroyo-blanco.docx" },
-    { name:"Promptbook del desafío.pdf", type:"Promptbook", meta:"PDF · 7 prompts paso a paso",
-      kind:"prompt", url:"assets/files/promptbook-prompt-imagen-promo.docx" }
+      kind:"material", url:"https://drive.google.com/file/d/1t0y_iHMNHtegsvEOz5hcKXCnMioVrdrp/view?usp=sharing" },
+    { name:"Promptbook del desafío.docx", type:"Promptbook", meta:"PDF · 7 prompts paso a paso",
+      kind:"prompt", url:"https://drive.google.com/file/d/1jejpXnPGXEclsjAUcng4uep5Aj0a0zYc/view?usp=sharing" }
   ],
   hints:[
     "Antes de escribir el prompt, marcá en el brief tres cosas: qué tiene que aparecer, cómo se tiene que ver y qué no puede aparecer. No todo el brief sirve para la imagen.",
@@ -105,8 +105,8 @@ const CHALLENGES = [
       "Pedir formato vertical 4:5 y dejar el tercio superior despejado, porque el texto de la promo se agrega después en un editor, no dentro de la imagen.",
       "En la segunda versión, nombrar las restricciones que la primera imagen no respetó: sin personas, sin texto ni logos y sin elementos de lujo."
     ],
-    goldcopy:{ name:"Prompt de la imagen — resuelto.docx", type:"Documento resuelto",
-               url:"assets/files/prompt-imagen-promo-resuelto.docx" }
+    goldcopy:{ name:"Prompt de la imagen — resuelto.pdf", type:"Documento resuelto",
+               url:"https://drive.google.com/file/d/10njAXuFr65mZ0x2An1P-BSFVMlLOcjR8/view?usp=sharing" }
   }
 },
 {
@@ -116,7 +116,7 @@ const CHALLENGES = [
   skills:["prompting","crear","comunicar"], tools:["ia","chatgpt","gemini"],
   keywords:["promociones","corralón","materiales","ventas","whatsapp","descuentos","prompt","cartel"],
   description:"Trabajás en ventas de un corralón de materiales y tenés que usar la IA para crear las promociones de la semana, respetando el stock y las reglas del dueño.",
-  video:{ caso:"", resolucion:"" },
+  video:{ caso:"https://youtu.be/4CWiR1OA7wU", resolucion:"" },
   context:"Trabajás en el equipo de ventas de Corralón El Molino, en Paraná. Atendés el mostrador y manejás la lista de difusión de WhatsApp, donde hay unos 900 clientes: albañiles, maestros mayores de obra y vecinos que refaccionan. Todas las semanas hay que armar promociones y nadie tiene tiempo. Un compañero ya probó pedírselas a la IA con un prompt de una línea, y el resultado fue un \"20 % OFF en todo + envío gratis\" que el dueño no puede dar.",
   challenge:"Escribí un prompt para que la IA cree las 3 promociones de la semana del 19 al 24 de octubre. Tiene que usar los productos y los descuentos máximos del brief y cumplir las reglas de Raúl, el dueño. Por cada promo, la IA tiene que devolver un nombre, la mecánica, un mensaje de WhatsApp de hasta 50 palabras y un texto para el cartel de hasta 10 palabras. Probá el prompt, revisá el resultado y corregí lo que no cumpla.",
   deliverables:[
@@ -131,10 +131,10 @@ const CHALLENGES = [
     "Revisar lo que genera la IA y pedir ajustes"
   ],
   resources:[
-    { name:"Brief de promociones — Corralón El Molino.pdf", type:"Material del caso", meta:"PDF · 2 páginas · tabla de 5 productos",
-      kind:"material", url:"assets/files/brief-promociones-corralon.pdf" },
+    { name:"Brief de promociones — Corralón El Molino.pdf", type:"Material del caso", meta:"PDF · 1 páginas · tabla de 5 productos  ·  Reglas del dueño",
+      kind:"material", url:"https://drive.google.com/file/d/1ATLc4fpbtlk42C3qd_SnedZfZcajZsrc/view?usp=drive_link" },
     { name:"Promptbook — Promociones del corralón.pdf", type:"Promptbook", meta:"PDF · 3 pasos + variante",
-      kind:"prompt", url:"assets/files/promptbook-promociones-corralon.pdf" }
+      kind:"prompt", url:"https://drive.google.com/file/d/1ryBnRO25NIef7kus4t-EotC90uFMkeFx/view?usp=sharing" }
   ],
   hints:[
     "Empezá por el intento de Lucas: ¿qué no sabía la IA cuando le pidió \"promociones para un corralón\"?",
@@ -152,7 +152,7 @@ const CHALLENGES = [
       "Revisar e iterar: la primera respuesta prometió envío sin cargo y se pasó de largo en un mensaje."
     ],
     goldcopy:{ name:"Promociones del corralón — resuelto.pdf", type:"Archivo resuelto",
-               url:"assets/files/promociones-corralon-resuelto.pdf" }
+               url:"https://drive.google.com/file/d/1eMJ-sgIuZK_7fzUp9msMa2EzLpIkGY7P/view?usp=sharing" }
   }
 },
 {
@@ -163,8 +163,8 @@ const CHALLENGES = [
   skills:["prompting","comunicar","crear"], tools:["ia","chatgpt","gemini"],
   keywords:["prompt","campaña","marketing","café","instagram","brief","redes sociales","estructura de prompt"],
   description:"Un café de especialidad lanza su merienda de primavera y el estudio necesita una propuesta de campaña. Tu tarea: convertir el brief del cliente en un prompt claro para que la IA arme un primer borrador que sirva.",
-  video:{ caso:"", resolucion:"" },
-  context:"Trabajás como productor/a de contenidos junior en Estudio Trama, un estudio chico de comunicación de Rosario que maneja las redes de varios comercios de barrio. Uno de los clientes es Almácigo, un café de especialidad de barrio Pichincha: a la mañana está lleno, pero de martes a viernes, entre las 15 y las 18 h, las mesas quedan vacías. Para revertirlo, lanzan la 'Merienda de primavera' (cold brew + budín de limón y amapola a $8.500) y le pidieron al estudio una campaña de cuatro semanas. Martín, tu líder de cuentas, ya probó pedirle la campaña a la IA con una sola línea y el resultado no sirvió: genérico, con un descuento que no existe y un tono que no es el del café.",
+  video:{ caso:"https://youtu.be/iY4tFvH7Rz8", resolucion:"" },
+  context:"Trabajás como productor/a de contenidos junior en Estudio Trama, un estudio chico de comunicación de Rosario que maneja las redes de varios comercios de barrio. Uno de los clientes es Almácigo, un café de especialidad de barrio Pichincha: a la mañana está lleno, pero de martes a viernes, entre las 15 y las 18 h, las mesas quedan vacías. Para revertirlo, lanzan la 'Merienda de primavera' y le pidieron al estudio una campaña de cuatro semanas. Martín, tu líder de cuentas, ya probó pedirle la campaña a la IA con una sola línea y el resultado no sirvió: genérico, con un descuento que no existe y un tono que no es el del café.",
   challenge:"Escribí el prompt que vas a usar para que la IA te arme una primera propuesta de campaña para la Merienda de primavera de Almácigo. Tiene que salir del brief e incluir las cinco partes que viste en el curso: rol, contexto, tarea, formato de la respuesta y restricciones. Probalo en un chat nuevo, revisá la respuesta contra el brief y hacé al menos una iteración para mejorar lo que no funcionó. No hace falta que la campaña quede perfecta: lo que se evalúa es el prompt.",
   deliverables:[
     "Tu prompt en dos versiones: la primera y la mejorada después de probarla",
@@ -180,10 +180,10 @@ const CHALLENGES = [
     "Cuidar la información del cliente antes de compartirla con una IA"
   ],
   resources:[
-    { name:"Brief — Campaña Merienda de primavera.docx", type:"Brief del cliente", meta:"Word · 3 páginas · brief + primer intento fallido",
-      kind:"material", url:"assets/files/brief-campana-merienda-primavera.docx" },
+    { name:"Brief — Campaña Merienda de primavera.docx", type:"Brief del cliente", meta:"PDF · 3 páginas · brief + primer intento fallido",
+      kind:"material", url:"https://drive.google.com/file/d/1s73xNbX9AUwEODwkrDuC1-c3AKq2HRam/view?usp=sharing" },
     { name:"Promptbook del desafío.docx", type:"Promptbook", meta:"Word · 7 prompts paso a paso",
-      kind:"prompt", url:"assets/files/promptbook-prompt-campana-cafe.docx" }
+      kind:"prompt", url:"https://drive.google.com/file/d/1muGBTx6h4Dro3nadHll9T2vg-MVFvb0j/view?usp=sharing" }
   ],
   hints:[
     "Antes de escribir, marcá en el brief lo que la IA sí o sí necesita saber: qué se lanza, para quién, cuándo, dónde se publica y con qué tono. Lo que no cambia la respuesta, dejalo afuera.",
@@ -201,10 +201,58 @@ const CHALLENGES = [
       "Pedirle a la IA que liste los supuestos que hizo, para detectar lo que inventó.",
       "Iterar con ajustes puntuales sobre la misma conversación, sin reescribir todo el prompt."
     ],
-    goldcopy:{ name:"Prompt campaña café — resuelto.docx", type:"Archivo resuelto",
-               url:"assets/files/prompt-campana-cafe-resuelto.docx" }
+    goldcopy:{ name:"GoldCopy - Prompt campaña café.pdf", type:"Archivo resuelto",
+               url:"https://drive.google.com/file/d/1KdhZBzZE18ctk5OI90MiAaI9SKFOP9u1/view?usp=sharing" }
   }
-},{
+},
+{
+  id:"creativas-idea-cliente-campana",
+  title:"Diseñá un prompt que te ayude a entender los pedidos del cliente",
+  sector:"creativas", course:"introduccion-ia", difficulty:"inicial", duration:30,
+  skills:["prompting","analizar","comunicar"], tools:["ia","chatgpt","gemini"],
+  keywords:["prompt","brief","cliente","campaña","marketing","reunión","mails","heladería","estudio creativo"],
+  description:"Un cliente nuevo te dejó su idea de campaña repartida entre una reunión, tres mails y un brief a medio llenar. Diseñá un prompt para que la IA la ordene sin inventar nada.",
+  privacidad:"Los materiales incluyen nombres y mails de los dueños de la heladería, además de datos comerciales (presupuesto y ventas). Con un cliente real, anonimizá esa información antes de pegarla en una IA, como viste en el curso.",
+  video:{ caso:"https://youtu.be/s3SUMEEKPHA", resolucion:"" },
+  context:"Trabajás como ejecutivo/a de cuentas junior en Estudio Faro, un estudio creativo de Córdoba. Acaban de sumar una cuenta nueva: Helados Pampa Fría, una heladería artesanal con tres locales que quiere una campaña para esta temporada. Ya hubo una reunión inicial y después llegaron tres mails, pero la información está desordenada y el dueño y su hija no siempre dicen lo mismo. El brief que completó el cliente quedó casi vacío.",
+  challenge:"Tu directora te pide que, antes de pensar ideas creativas, dejes en claro qué quiere el cliente. Escribí un prompt que le pida a la IA leer la transcripción, los mails y el brief, y ordenar la idea del cliente en un brief de una página. La IA no tiene que inventar: lo que falte o se contradiga tiene que quedar marcado para validarlo. Después, revisá la respuesta contra los materiales y armá las preguntas para la próxima reunión.",
+  deliverables:[
+    "Tu prompt, con rol, contexto, tarea, formato de salida y límites.",
+    "El brief ordenado por la IA y revisado por vos (con lo que falta o se contradice marcado).",
+    "Entre 3 y 5 preguntas para validar con el cliente."
+  ],
+  practice:[
+    "Estructura de un prompt: rol, contexto, tarea, formato y límites.",
+    "Pedirle a la IA un formato de salida fácil de revisar.",
+    "Evitar que la IA invente datos que no están en los materiales.",
+    "Revisar críticamente una respuesta de IA antes de usarla.",
+    "Anonimizar información de clientes antes de compartirla con una IA."
+  ],
+  resources:[
+    { name:"Materiales del cliente — Pampa Fría.pdf", type:"Material de trabajo", meta:"PDF · Reunión, 3 mails y brief",
+      kind:"material", url:"https://drive.google.com/file/d/1iBgymy6FMbUSYsbTZH3B9lKko104JLC3/view?usp=drive_link" },
+    { name:"Promptbook — Idea del cliente.pdf", type:"Promptbook", meta:"PDF · Plantilla y 3 prompts",
+      kind:"prompt", url:"https://drive.google.com/file/d/1OGvN7vBwJP6KHTcYKGKwnc-IGAiNINP_/view?usp=drive_link" }
+  ],
+  hints:[
+    "Antes de escribir el prompt, pensá qué campos tiene que tener un brief y cómo querés recibir la respuesta: ¿texto corrido, lista o tabla?",
+    "Pedile a la IA que indique de qué material sale cada dato. Así vas a poder revisar rápido si lo inventó o no.",
+    "Hay al menos tres temas en los que Raúl y Micaela no dicen lo mismo. En lugar de que la IA elija una versión, pedile que los marque como pendientes de validar."
+  ],
+  prompt:"Estoy armando un prompt para que una IA lea la transcripción de una reunión, unos mails y un brief incompleto de un cliente, y me ordene su idea para una campaña de marketing. Revisá mi borrador y decime qué le falta en cuanto a rol, contexto, tarea, formato de salida y límites. No lo reescribas entero: marcame los 3 cambios que más mejorarían la respuesta. Mi borrador: [pegá acá tu prompt]",
+  solution:{
+    approach:"Escribir un prompt con rol, contexto, tarea, formato y límites; pegar los tres materiales etiquetados, y pedirle a la IA que ordene la idea del cliente en una tabla que separe lo confirmado de lo que falta o se contradice. Después, revisar la respuesta contra los materiales y convertir las dudas en preguntas para el cliente.",
+    decisions:[
+      "Pedir un formato fijo (campo, qué dijo el cliente, fuente y estado) para que la respuesta sea fácil de revisar.",
+      "Aclarar explícitamente que la IA no complete lo que falta: lo marca como «A validar» o «Falta».",
+      "Pegar los tres materiales juntos y etiquetados, para que la IA pueda cruzar la reunión, los mails y el brief.",
+      "Revisar la salida contra los materiales, corregir lo que la IA supuso y transformar los pendientes en preguntas."
+    ],
+    goldcopy:{ name:"Idea del cliente Pampa Fría — resuelto.pdf", type:"Archivo resuelto",
+               url:"https://drive.google.com/file/d/1PzYOZZbUv5ux0b9_Tsh5_JQEeUTMPniU/view?usp=drive_link" }
+  }
+},
+{
   id:"servicios-prompt-encuesta",
   title:"Armá el prompt para la encuesta de clientes de una pyme",
   sector:"servicios", course:"introduccion-ia", difficulty:"inicial", duration:30,
@@ -212,7 +260,7 @@ const CHALLENGES = [
   keywords:["encuesta","satisfacción","clientes","prompt","pyme","google forms","notas de reunión","requisitos"],
   description:"Una pyme rosarina de limpieza para empresas está perdiendo clientes y quiere encuestarlos. A partir de unas notas de reunión desordenadas, armá el prompt para que la IA genere la encuesta.",
   privacidad:"Las notas nombran a clientes de la empresa y a personas del equipo. Aunque este caso es ficticio, con notas reales sacá o reemplazá esos nombres antes de pegarlas en una IA, como viste en el curso.",
-  video:{ caso:"", resolucion:"" },
+  video:{ caso:"https://youtu.be/i6X6awH-D7M", resolucion:"" },
   context:"Entraste hace poco como asistente administrativo/a en Servilim SRL, una pyme de Rosario que hace limpieza y mantenimiento para oficinas, consorcios y locales comerciales. Tiene 42 empleados y 58 clientes con contrato mensual. En los últimos seis meses se dieron de baja seis clientes y casi ninguno explicó por qué. La empresa nunca hizo una encuesta, así que Marcela, la socia gerente, se reunió con el equipo para definir una y te pasó sus notas tal cual las escribió.",
   challenge:"Escribí un prompt para que una IA genere la encuesta de satisfacción de Servilim, lista para cargar en Google Forms. Para eso, primero extraé de las notas los requisitos que se acordaron (dejando afuera lo que no tiene que ver con la encuesta), después armá el prompt y probalo. Por último, revisá que la encuesta que devuelve la IA cumpla todo lo acordado y ajustala si hace falta.",
   deliverables:[
@@ -229,9 +277,9 @@ const CHALLENGES = [
   ],
   resources:[
     { name:"Brief y notas de reunión — Servilim.pdf", type:"Material del caso", meta:"PDF · 2 páginas",
-      kind:"material", url:"assets/files/brief-y-notas-servilim.pdf" },
+      kind:"material", url:"https://drive.google.com/file/d/19t-l_am9fAhs4W6daU05lP0llEtrxvPo/view?usp=drive_link" },
     { name:"Promptbook — Encuesta Servilim.pdf", type:"Promptbook", meta:"PDF · 3 pasos + variante",
-      kind:"prompt", url:"assets/files/promptbook-encuesta-servilim.pdf" }
+      kind:"prompt", url:"https://drive.google.com/file/d/1cKpev3qWSRS6CDOzFhA8wPS4bgnvDU8e/view?usp=drive_link" }
   ],
   hints:[
     "Antes de escribir el prompt, releé las notas y separá lo que quedó acordado de lo que es ruido o de lo que solo fue una opinión.",
@@ -249,7 +297,7 @@ const CHALLENGES = [
       "Revisar el resultado con un checklist e iterar: la primera versión pidió el nombre de la empresa y preguntó por el precio."
     ],
     goldcopy:{ name:"Encuesta Servilim — resuelto.pdf", type:"Archivo resuelto",
-               url:"assets/files/encuesta-servilim-resuelto.pdf" }
+               url:"https://drive.google.com/file/d/1ErUY11QgqKO459KqYjkiSKwcHyCH_lQQ/view?usp=drive_link" }
   }
 },
 ];
