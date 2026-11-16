@@ -66,7 +66,7 @@ const CHALLENGES = [
   id:"turismo-prompt-imagen-promo",
   privacidad:"Este brief tiene datos internos de un negocio: tarifas, ocupación y el contacto de la dueña. Con un brief real, compartí con la IA solo la información visual que necesita y dejá afuera los datos de la empresa y de las personas, como viste en el curso.",
   title:"Armá con IA el prompt de la imagen para una promo de primavera",
-  sector:"turismo", course:"introduccion-ia", difficulty:"inicial", duration:30,
+  sector:"turismo", course:"introduccion-ia", difficulty:"inicial", duration:15,
   skills:["crear","prompting","comunicar"], tools:["ia","chatgpt","gemini"],
   keywords:["prompt de imagen","generación de imágenes","brief","instagram","redes sociales","promoción","cabañas","primavera"],
   description:"Unas cabañas de El Bolsón necesitan la imagen para su promo de primavera en Instagram. Convertí el brief en un buen prompt de imagen y mejoralo hasta que el resultado cumpla lo pedido.",
@@ -112,7 +112,7 @@ const CHALLENGES = [
 {
   id:"construccion-prompt-promociones",
   title:"Armá un prompt para crear las promociones de un corralón",
-  sector:"construccion", course:"introduccion-ia", difficulty:"inicial", duration:30,
+  sector:"construccion", course:"introduccion-ia", difficulty:"inicial", duration:15,
   skills:["prompting","crear","comunicar"], tools:["ia","chatgpt","gemini"],
   keywords:["promociones","corralón","materiales","ventas","whatsapp","descuentos","prompt","cartel"],
   description:"Trabajás en ventas de un corralón de materiales y tenés que usar la IA para crear las promociones de la semana, respetando el stock y las reglas del dueño.",
@@ -159,7 +159,7 @@ const CHALLENGES = [
   id:"creativas-prompt-campana-cafe",
   privacidad:"El brief tiene información comercial de un cliente (ventas por franja horaria, ticket promedio, presupuesto) y los datos de contacto de la dueña. Con un cliente real, reemplazá el nombre del negocio y sacá números internos y contactos antes de pegar el brief en una IA, como viste en el curso.",
   title:"Diseñá el prompt para la campaña de primavera de un café",
-  sector:"creativas", course:"introduccion-ia", difficulty:"inicial", duration:30,
+  sector:"creativas", course:"introduccion-ia", difficulty:"inicial", duration:15,
   skills:["prompting","comunicar","crear"], tools:["ia","chatgpt","gemini"],
   keywords:["prompt","campaña","marketing","café","instagram","brief","redes sociales","estructura de prompt"],
   description:"Un café de especialidad lanza su merienda de primavera y el estudio necesita una propuesta de campaña. Tu tarea: convertir el brief del cliente en un prompt claro para que la IA arme un primer borrador que sirva.",
@@ -208,7 +208,7 @@ const CHALLENGES = [
 {
   id:"creativas-idea-cliente-campana",
   title:"Diseñá un prompt que te ayude a entender los pedidos del cliente",
-  sector:"creativas", course:"introduccion-ia", difficulty:"inicial", duration:30,
+  sector:"creativas", course:"introduccion-ia", difficulty:"inicial", duration:15,
   skills:["prompting","analizar","comunicar"], tools:["ia","chatgpt","gemini"],
   keywords:["prompt","brief","cliente","campaña","marketing","reunión","mails","heladería","estudio creativo"],
   description:"Un cliente nuevo te dejó su idea de campaña repartida entre una reunión, tres mails y un brief a medio llenar. Diseñá un prompt para que la IA la ordene sin inventar nada.",
@@ -255,7 +255,7 @@ const CHALLENGES = [
 {
   id:"servicios-prompt-encuesta",
   title:"Armá el prompt para la encuesta de clientes de una pyme",
-  sector:"servicios", course:"introduccion-ia", difficulty:"inicial", duration:30,
+  sector:"servicios", course:"introduccion-ia", difficulty:"inicial", duration:15,
   skills:["prompting","analizar","comunicar"], tools:["ia","chatgpt","gemini","formularios"],
   keywords:["encuesta","satisfacción","clientes","prompt","pyme","google forms","notas de reunión","requisitos"],
   description:"Una pyme rosarina de limpieza para empresas está perdiendo clientes y quiere encuestarlos. A partir de unas notas de reunión desordenadas, armá el prompt para que la IA genere la encuesta.",
@@ -298,6 +298,249 @@ const CHALLENGES = [
     ],
     goldcopy:{ name:"Encuesta Servilim — resuelto.pdf", type:"Archivo resuelto",
                url:"https://drive.google.com/file/d/1ErUY11QgqKO459KqYjkiSKwcHyCH_lQQ/view?usp=drive_link" }
+  }
+},
+{
+  id:"construccion-compras-materiales",
+  title:"Ordená la planilla de compras de materiales de la obra",
+  sector:"construccion", course:"planillas-inteligentes", difficulty:"intermedio", duration:45,
+  skills:["organizar","analizar","prompting"], tools:["planillas","sheets","ia"],
+  keywords:["limpieza de datos","compras","materiales","obra","duplicados","proveedores","rubros","SUMAR.SI"],
+  description:"La planilla de compras de marzo la cargaron tres personas distintas y es un caos. Limpiala para saber cuánto se gastó realmente en materiales, por rubro.",
+  video:{ caso:"https://youtu.be/msxT6hMYn80", resolucion:"" },
+  context:"Trabajás en la administración de Constructora Paraná Obras S.R.L., que está levantando el Edificio Los Aromos, un edificio de 8 pisos en Rosario. Durante marzo, las compras de materiales las fueron cargando el jefe de obra, el pañolero y vos, cada uno a su manera: fechas escritas de mil formas, proveedores con y sin tildes, precios con signo peso y algún remito cargado dos veces. El viernes hay reunión con el director de obra y te pidieron un número confiable de cuánto se gastó en materiales el mes pasado.",
+  challenge:"Limpiá y ordená la planilla de compras de marzo para que los datos queden consistentes y sin duplicados. Después calculá el total de cada compra, el gasto total del mes y cuánto se gastó en cada uno de los 4 rubros de la obra (Estructura, Albañilería, Instalaciones y Terminaciones).",
+  deliverables:[
+    "Planilla de compras limpia: fechas, proveedores, materiales, rubros y unidades escritos de forma uniforme",
+    "Columna Total calculada con fórmula (Cantidad × Precio unitario)",
+    "Resumen con el gasto total del mes y el gasto por rubro",
+    "Una nota breve con qué cambiaste y por qué"
+  ],
+  practice:[
+    "Detectar y eliminar filas duplicadas",
+    "Unificar formatos de fecha, texto y números",
+    "Completar datos faltantes con criterio",
+    "Usar fórmulas básicas y SUMAR.SI",
+    "Pedirle ayuda a un asistente de IA para limpiar datos"
+  ],
+  resources:[
+    { name:"ordena la planilla de compras de materiales de la obra.xlsx", type:"Archivo de trabajo", meta:"Planilla · 62 filas · 8 columnas",
+      kind:"archivo", url:"https://docs.google.com/spreadsheets/d/1k_WarvBAMZFd005Vo6vujTb-1nTT0qdh8l1GbopiwoM/edit?usp=drive_link" },
+    { name:"Promptbook - Compras materiales.pdf", type:"Promptbook", meta:"PDF · 9 prompts paso a paso",
+      kind:"prompt", url:"https://drive.google.com/file/d/1BCBwfSbkbIuR3sIb6hsBqA9qpXz7e9iQ/view?usp=drive_link" }
+  ],
+  hints:[
+    "Antes de tocar nada, recorré la planilla columna por columna y anotá qué problemas ves en cada una. Vas a encontrar al menos cinco tipos distintos.",
+    "El Nº de remito identifica cada compra: si aparece dos veces, es la misma compra cargada de nuevo. Y un número que tiene \"$\", puntos o palabras adentro no suma: primero tiene que ser número.",
+    "Cuando proveedores y rubros estén escritos siempre igual, agregá la columna Total y armá una tablita con los 4 rubros. SUMAR.SI te deja sumar el Total solo de las filas de un rubro."
+  ],
+  prompt:"Actuá como asistente administrativo de una constructora. Tengo una planilla de compras de materiales de obra con estas columnas: Nº remito, Fecha, Proveedor, Material, Rubro, Cantidad, Unidad y Precio unitario. La cargaron varias personas y tiene fechas en distintos formatos, nombres escritos de formas diferentes, precios con \"$\" y puntos, algunas celdas vacías y remitos repetidos. Te pego las filas abajo. 1) Listame los problemas que encontrás, agrupados por columna. 2) Proponeme cómo dejar cada columna uniforme en Google Sheets (con qué función o herramienta). 3) Decime qué remitos parecen duplicados. No borres ni inventes datos: si algo no se puede deducir, marcalo para revisar.",
+  solution:{
+    approach:"Primero se diagnostica la planilla columna por columna; después se eliminan los duplicados usando el Nº de remito, se unifican formatos (fechas, textos, unidades y números) y se completan los vacíos que se pueden deducir del material. Recién con los datos limpios se calcula el Total de cada compra y el resumen por rubro con SUMAR.SI.",
+    decisions:[
+      "Usar el Nº de remito como identificador: seis remitos (R-1046, R-1054, R-1060, R-1069, R-1078 y R-1090) estaban cargados dos veces y se dejaron una sola vez (de 62 filas quedan 56 compras).",
+      "Convertir fechas, cantidades y precios a valores reales (fecha y número), no texto, para poder ordenar, filtrar y sumar.",
+      "Escribir siempre igual proveedores, materiales y rubros, con una lista cerrada de 4 rubros, para que SUMAR.SI no se pierda filas.",
+      "Completar los rubros y las unidades vacíos a partir del material (cal e hidrófugo → Albañilería, pegamento para porcellanato y pastina → Terminaciones, alambre → kg) en lugar de dejarlos en blanco o inventar.",
+      "Calcular el Total con fórmula y agregar un control: la suma de los rubros tiene que dar igual que el total del mes."
+    ],
+    goldcopy:{ name:"GoldCopy - Ordená la planilla de compras de materiales de la obra", type:"Archivo resuelto",
+               url:"https://docs.google.com/spreadsheets/d/1ThY7vvEeeHOSsNTKJxjfBm7zaykzTlQ4m8lUE4XC944/edit?usp=sharing" }
+  }
+},
+{
+  id:"servicios-anonimizar-municipio",
+  title:"Limpiá y anonimizá la nómina antes de enviarla al municipio",
+  sector:"servicios", course:"planillas-inteligentes", difficulty:"inicial", duration:30,
+  skills:["organizar","prompting","resolver"], tools:["planillas","sheets","ia"],
+  keywords:["limpieza de datos","anonimización","datos personales","nómina","municipio","duplicados","formato de fechas","protección de datos"],
+  description:"Una pyme de servicios tiene que mandarle al municipio el listado de su personal para un programa de empleo. La nómina viene desordenada y con datos personales: hay que limpiarla y anonimizarla antes del envío.",
+  privacidad:"La nómina tiene nombres, DNI, fechas de nacimiento, teléfonos, mails y domicilios del personal. Son datos ficticios, pero trabajalos como si fueran reales: no los pegues en una IA y anonimizá todo antes de compartir, como viste en el curso.",
+  video:{ caso:"https://youtu.be/Ojy2g5QNJ54", resolucion:"https://youtu.be/EoQ0dRI1mts" },
+  context:"Trabajás en la administración de Soluciones Norte SRL, una pyme de Río Claro que brinda atención al cliente y back office para otras empresas. Tiene 20 empleados. La Municipalidad ofrece una reducción de la tasa de seguridad e higiene a las empresas donde al menos el 60 % del personal vive en el partido, y para evaluarlo pidió el listado del personal sin datos que permitan identificar a las personas. La única fuente es una exportación del sistema de sueldos que nadie revisó.",
+  challenge:"Prepará el archivo para la Municipalidad. Primero limpiá la nómina: sacá las filas repetidas y unificá nombres, DNI, fechas, barrios, localidades, género y tipo de contrato. Después armá una hoja anonimizada con los datos que pide el municipio (código, barrio, rango de edad, género, tipo de contrato, año de ingreso y si reside en el partido) y calculá si la empresa llega al 60 % de residentes. Podés usar la IA como asistente, pero sin pasarle los datos reales.",
+  deliverables:[
+    "La nómina limpia, sin duplicados y con formatos unificados (uso interno)",
+    "La hoja anonimizada lista para enviar a la Municipalidad",
+    "El cálculo del porcentaje de personal que reside en el partido",
+    "Una nota breve con qué datos eliminaste, reemplazaste o generalizaste"
+  ],
+  practice:[
+    "Detectar y quitar duplicados",
+    "Unificar texto y fechas con funciones y Buscar y reemplazar",
+    "Anonimizar: eliminar, codificar y generalizar datos personales",
+    "Calcular rangos y porcentajes con fórmulas",
+    "Usar la IA como asistente sin exponer datos personales"
+  ],
+  resources:[
+    { name:"Nómina de personal — Soluciones Norte.xlsx", type:"Archivo de trabajo", meta:"Planilla · 22 filas · incluye el pedido del municipio",
+      kind:"archivo", url:"https://docs.google.com/spreadsheets/d/1ZjuD5fBFxULH5VYjj25vfaJcRuSesi-qSzAUSM9mm_k/edit?usp=sharing" },
+    { name:"Limpiá y anonimizá la nómina antes de enviarla al municipio", type:"Promptbook", meta:"PDF · 3 pasos + variante",
+      kind:"prompt", url:"https://drive.google.com/file/d/1OykU0ycV91GKpTlnRkoa_6UDDczJSrgC/view?usp=drive_link" }
+  ],
+  hints:[
+    "Leé primero la hoja \"Pedido del municipio\": te dice exactamente qué columnas mandar y cuáles no. Todo lo demás se queda en la empresa.",
+    "Para encontrar duplicados, no confíes en el nombre: compará por DNI, después de sacarle los puntos. Para nombres y barrios, probá ESPACIOS, NOMPROPIO y Buscar y reemplazar.",
+    "Anonimizar no es solo borrar columnas: el nombre se reemplaza por un código, la fecha de nacimiento se generaliza a un rango y la de ingreso, al año. Guardá la correspondencia código-persona en una hoja interna que no se envía."
+  ],
+  prompt:"Tengo una planilla de Google Sheets con la nómina de personal de una pyme. Columnas: Apellido y nombre, DNI, Fecha de nacimiento, Teléfono, Mail, Domicilio, Barrio, Localidad, Género, Tipo de contrato, Fecha de ingreso. Viene de una exportación y tiene nombres con mayúsculas y espacios de más, DNI con y sin puntos, fechas en varios formatos, barrios escritos de distintas formas y posibles filas repetidas. No te voy a pasar los datos. Dame un plan paso a paso para limpiarla en Google Sheets, con las funciones o herramientas para cada paso.",
+  solution:{
+    approach:"Separar el trabajo en dos hojas: una nómina limpia de uso interno, que conserva los datos personales y la correspondencia con el código, y una hoja para el municipio, que toma de la anterior solo lo pedido, anonimizado con fórmulas. Primero se limpia y después se anonimiza, porque con datos sucios no se pueden detectar duplicados ni calcular edades.",
+    decisions:[
+      "Detectar duplicados por DNI sin puntos, no por nombre: así aparece Herrera, repetido en mayúsculas y con otro formato.",
+      "Unificar todas las fechas como fecha real, para poder calcular la edad con fórmula.",
+      "Diferenciar los barrios vacíos: \"No corresponde\" para quien vive en otro partido y \"Sin dato\" para completar antes del envío.",
+      "Anonimizar en tres niveles: eliminar (DNI, teléfono, mail, domicilio), codificar (nombre → EMP-01) y generalizar (edad en rangos, ingreso solo el año).",
+      "Compartir solo la hoja del municipio, pegada como valores en un archivo nuevo, y no pasarle nunca la nómina real a la IA."
+    ],
+    goldcopy:{ name:"GoldCopy - Nómina de personal — Soluciones Norte.xlsx", type:"Archivo resuelto",
+               url:"https://docs.google.com/spreadsheets/d/1Mp24x49z_fE1M3Cc1YOGIOrwgkPbef4I6vGW1zCu_ts/edit?usp=drive_link" }
+  }
+},
+{
+  id:"turismo-registro-reservas",
+  title:"Ordená con IA el registro de reservas de una hostería",
+  sector:"turismo", course:"planillas-inteligentes", difficulty:"inicial", duration:30,
+  skills:["organizar","analizar","prompting"], tools:["ia","chatgpt","gemini","planillas"],
+  keywords:["reservas","hostería","limpieza de datos","duplicados","canales de venta","booking","whatsapp","datos personales"],
+  description:"El registro de reservas de una hostería en Tilcara está lleno de errores de carga. Usá la IA como asistente para ordenarlo y responder tres preguntas simples de la dueña.",
+  video:{ caso:"https://youtu.be/qQFf6wcpefY", resolucion:"https://youtu.be/x_6FAlP932s" },
+  context:"Trabajás en la recepción de la Hostería Piedra Mora, un alojamiento de 12 habitaciones en Tilcara, Jujuy. Las reservas llegan por Booking, WhatsApp, Instagram y teléfono, y durante semanas las cargaron en la misma planilla tres personas distintas: vos, la dueña (Marta) desde el celular y un compañero que pegaba lo que bajaba de Booking. Resultado: fechas escritas de mil maneras, canales con nombres distintos, montos como texto, celdas vacías y reservas cargadas dos veces.",
+  challenge:"Marta necesita saber, antes del fin de semana, cómo viene la temporada de octubre y noviembre. Usá una herramienta de IA (ChatGPT, Gemini o la que uses) como asistente para ordenar el registro de reservas y responder tres preguntas: ¿cuántas reservas reales hay?, ¿qué canal trae más reservas? y ¿cuánto suman los ingresos del período? Ojo: la planilla tiene teléfonos de huéspedes, así que antes de pegar datos en la IA pensá qué información no deberías compartir.",
+  deliverables:[
+    "La planilla limpia: una fila por reserva real, con fechas, canales, habitaciones y montos unificados",
+    "Un resumen con las tres respuestas para Marta (reservas reales, canal con más reservas e ingresos totales)",
+    "Un registro breve de qué problemas encontraste, qué le pediste a la IA y cómo verificaste sus respuestas"
+  ],
+  practice:[
+    "Escribir prompts claros con rol, contexto y formato de salida",
+    "Usar la IA para diagnosticar y limpiar datos",
+    "Verificar las respuestas de la IA antes de confiar en ellas",
+    "Cuidar los datos personales al trabajar con herramientas de IA",
+    "Contar y sumar datos para responder preguntas del negocio"
+  ],
+  resources:[
+    { name:"Ordená con IA el registro de reservas de una hostería", type:"Archivo de trabajo", meta:"Planilla · 66 filas · 9 columnas",
+      kind:"archivo", url:"https://docs.google.com/spreadsheets/d/1xRi9MHwQKMllhtKc4Daset1W_zAmRpTeqIGfNcBts9M/edit?usp=drive_link" },
+    { name:"Promptbook del desafío.pdf", type:"Promptbook", meta:"PDF · 8 prompts paso a paso",
+      kind:"prompt", url:"https://docs.google.com/spreadsheets/d/1xRi9MHwQKMllhtKc4Daset1W_zAmRpTeqIGfNcBts9M/edit?usp=sharing" }
+  ],
+  hints:[
+    "Antes de limpiar, pedile a la IA un diagnóstico: que te liste qué tipos de problemas ve en cada columna, sin corregir nada todavía.",
+    "Resolvé primero lo que se repite (cómo está escrito el canal, la habitación y las fechas) y recién después buscá duplicados: con los datos unificados, las filas repetidas se ven mucho más fácil.",
+    "Una reserva duplicada tiene el mismo huésped, la misma fecha de ingreso y la misma habitación. Si el mismo nombre aparece con fechas distintas, puede ser alguien que volvió: no lo borres sin mirar."
+  ],
+  prompt:"Actuá como asistente administrativo de una hostería en Tilcara. Te voy a pegar el registro de reservas de octubre y noviembre (sin la columna de teléfonos). Las columnas son: N°, Huésped, Fecha de ingreso, Noches, Habitación, Canal, Tarifa por noche e Importe total. Todavía no corrijas nada: armá una tabla con cada tipo de problema que encuentres (formato de fechas, canales escritos distinto, números como texto, celdas vacías, posibles duplicados), en qué columna aparece y 2 ejemplos con su N° de fila. [pegá acá las filas]",
+  solution:{
+    approach:"Primero se protegen los datos personales (se quita la columna Teléfono antes de usar la IA). Después se le pide a la IA un diagnóstico sin corregir, se unifican las categorías (canal y habitación), las fechas y los números, se completan los vacíos que se pueden deducir (tarifa según habitación; importe = noches × tarifa) y recién ahí se buscan duplicados. Con la tabla limpia se cuentan y suman las reservas por canal para responder a Marta, verificando cada paso con filtros y controles rápidos.",
+    decisions:[
+      "No pegar teléfonos en la IA: para limpiar no hacen falta y son datos personales de los huéspedes",
+      "Unificar el canal en 4 valores (Booking, WhatsApp, Instagram, Teléfono) y la habitación en 3 (Doble, Triple, Familiar) antes de contar",
+      "Recalcular todo el importe como Noches × Tarifa en vez de confiar en los montos cargados a mano",
+      "Considerar duplicado solo lo que coincide en huésped + fecha + habitación: el huésped que aparece dos veces con fechas distintas son dos estadías",
+      "Mirar reservas e ingresos por separado: el canal con más reservas no es necesariamente el que deja más plata"
+    ],
+    goldcopy:{ name:"GoldCopy - Ordená con IA el registro de reservas de una hostería", type:"Archivo resuelto",
+               url:"https://docs.google.com/spreadsheets/d/15fTmzefm8a4JPOs-iX7VGX0Oxshh-AEK1EFCK6wBPls/edit?usp=sharing" }
+  }
+},
+{
+  id:"cafe-aurora-feedback-clientes",
+  title:"Analizador inteligente de feedback para la toma de decisiones",
+  sector:"turismo", course:"planillas-inteligentes", difficulty:"avanzado", duration:60,
+  skills:["analizar","automatizar","comunicar","crear","resolver"], tools:["planillas","sheets","ia"],
+  keywords:["limpieza de datos","feedback de clientes","análisis de sentimiento","sucursales","canales de contacto","dashboard ejecutivo","Google Sheets","inteligencia artificial","calificación","hallazgos"],
+  description:"Café Aurora reúne comentarios de clientes de distintos canales. Ordená y enriquecé el dataset con IA para convertir el feedback en evidencia que permita tomar decisiones de negocio.",
+  video:{ caso:"https://youtu.be/biGYVx0j2TY", resolucion:"https://youtu.be/UaE4P_c9EK0" },
+  context:"Trabajás como analista de datos para Café Aurora. La empresa recopiló cientos de comentarios de clientes provenientes de distintos canales de atención. El dataset RAW contiene ID de comentario, fecha, canal, sucursal, calificación y comentario. La dirección necesita transformar esa información en evidencia para comprender la experiencia de los clientes. Entre los antecedentes a investigar hay problemas de abastecimiento, un cambio de encargado en la sucursal Caballito, dudas sobre la calidad de algunos productos y posibles diferencias entre sucursales y entre canales.",
+  challenge:"Prepará un dataset confiable y enriquecelo con IA para clasificar cada comentario por tema, sentimiento y prioridad. Después analizá el estado general de la experiencia de clientes, los aspectos del servicio que generan mayor reacción, las diferencias entre sucursales, la evolución temporal y los canales de contacto. Elaborá un dashboard ejecutivo y un informe de hallazgos con recomendaciones respaldadas por los datos. Respondé, como mínimo, cuál es el volumen de feedback, la calificación promedio, la distribución de sentimientos, los temas con más reclamos, las sucursales con mayor porcentaje de comentarios negativos, la evolución de Caballito antes y después de mayo, los cambios temporales relevantes y los canales con mayor proporción de reclamos.",
+  deliverables:[
+    "Dataset limpio y normalizado, con una estructura consistente para fecha, canal, sucursal, calificación y comentario",
+    "Dataset enriquecido con las columnas Tema, Sentimiento y Prioridad para cada comentario",
+    "Dashboard ejecutivo con KPIs generales, análisis de productos y experiencia, sucursales, canales y evolución temporal",
+    "Informe de hallazgos con resumen ejecutivo, evidencia cuantitativa y cualitativa, casos particulares, situaciones a seguir y recomendaciones de negocio",
+    "Recomendaciones para la dirección sustentadas estrictamente en la evidencia recopilada"
+  ],
+  practice:[
+    "Auditar, limpiar y normalizar un dataset en Google Sheets",
+    "Preparar un dataset para usarlo de forma segura con inteligencia artificial",
+    "Clasificar comentarios por tema, sentimiento y prioridad",
+    "Calcular KPIs y analizar feedback por sucursal, canal y período",
+    "Diseñar un dashboard ejecutivo y comunicar hallazgos sin atribuir causalidad sin evidencia"
+  ],
+  resources:[
+    { name:"Dataset RAW — Café Aurora", type:"Archivo de trabajo", meta:"Google Sheets",
+      kind:"archivo", url:"https://docs.google.com/spreadsheets/d/1_fkrJosfSbxsVbW0i8Q0tosHGPEkLiK_DVxrWdYL2Cc/edit?usp=drive_link" },
+    { name:"Promptbook del desafío — Café Aurora", type:"Promptbook", meta:"Google Docs",
+      kind:"prompt", url:"https://drive.google.com/file/d/11V0H1W9jq7jSCJedbLIcKjoHDfslzzY5/view?usp=drive_link" }
+  ],
+  hints:[
+    "Antes de analizar resultados, revisá que los campos clave estén completos y que fechas, canales, sucursales y calificaciones tengan un formato consistente. Un dashboard no corrige errores del dataset de origen.",
+    "Para clasificar con IA, enviá únicamente el identificador de la sucursal, la calificación y el comentario. Definí las categorías permitidas y pedí una salida tabular para poder reincorporarla a la planilla sin alterar el orden de los registros.",
+    "Al comparar sucursales o canales, usá porcentajes de comentarios negativos además de volúmenes absolutos. Si un cambio coincide en el tiempo con un evento operativo, tratá esa relación como una hipótesis que los datos deben investigar, no como una causa demostrada."
+  ],
+  prompt:"Estoy trabajando en Google Sheets con configuración regional de Argentina.\n\nTengo una hoja llamada IA con la siguiente estructura:\n\n* Columna A: ID_Sucursal\n* Columna B: Calificacion\n* Columna C: Comentario\n\nNecesito completar las siguientes columnas:\n\n* Columna D: Tema\n* Columna E: Sentimiento\n* Columna F: Prioridad\n\nAnalizá cada comentario y clasificá los resultados utilizando exclusivamente las siguientes categorías.\n\nTema:\n\nElegí una única categoría entre:\n\n* Atención\n* Producto\n* Precio\n* Limpieza\n* Ambiente\n* Tiempo de espera\n\nSentimiento\n\nClasificá cada comentario como:\n\n* Positivo\n* Negativo\n* Neutro\n\nPrioridad\n\nClasificá cada comentario como:\n\n* Alta\n* Media\n* Baja\n\nCriterios para Prioridad\n\nAlta: problemas graves o situaciones que requieren atención inmediata.\n\nMedia: situaciones que afectan la experiencia del cliente, pero no representan una urgencia.\n\nBaja: comentarios positivos, sugerencias o situaciones de escaso impacto operativo.\n\nDevolvé el resultado en una nueva versión de mi tabla enriquecida en formato csv, con las siguientes columnas, respetando el mismo orden de los registros:\n\n| Tema | Sentimiento | Prioridad |\n\nNo agregues comentarios ni explicaciones.",
+  solution:{
+    approach:"Primero se audita y normaliza el dataset para que los registros sean comparables. Después se prepara una hoja para IA que minimice los datos compartidos y se clasifican los comentarios con categorías cerradas de tema, sentimiento y prioridad. Las clasificaciones se revisan contra el comentario y la calificación antes de reincorporarlas al dataset. Con la tabla unificada se calculan los KPIs generales y se comparan temas, sucursales, canales y períodos. Finalmente se construyen el dashboard y el informe, distinguiendo siempre los datos observados de las hipótesis que requieran seguimiento.",
+    decisions:[
+      "Usar una estructura única para el dataset: ID de comentario, fecha, canal, sucursal, calificación y comentario; no analizar hasta corregir inconsistencias de formato, categorías y duplicados.",
+      "Preparar para IA una tabla con ID_Sucursal, Calificacion y Comentario, dejando fuera los datos que no son necesarios para clasificar el feedback.",
+      "Limitar la clasificación a seis temas (Atención, Producto, Precio, Limpieza, Ambiente y Tiempo de espera), tres sentimientos (Positivo, Neutro y Negativo) y tres prioridades (Alta, Media y Baja).",
+      "Validar la coherencia de Tema, Sentimiento y Prioridad con el texto y la calificación antes de usar esas variables en los análisis.",
+      "Comparar sucursales y canales principalmente por proporción de comentarios negativos, no solo por cantidad de mensajes.",
+      "Presentar coincidencias entre hitos operativos y cambios en el feedback como hipótesis de investigación, sin afirmar causalidad si el dataset no la demuestra.",
+      "Respaldar cada recomendación con los resultados del análisis y separar en el informe los datos observados, las interpretaciones y las líneas de seguimiento."
+    ],
+    goldcopy:{ name:"GoldCopy — Café Aurora", type:"Archivo resuelto",
+               url:"https://docs.google.com/spreadsheets/d/1CHyODAUfGkVm6X7RMCgbuVGgG6u439BOPGf_pUXbtGc/edit?usp=sharing" }
+  }
+},
+{
+  id:"construccion-vocabulario-obra",
+  title:"Prompteá para entender el lenguaje de la construcción",
+  sector:"construccion", course:"introduccion-ia", difficulty:"inicial", duration:45,
+  skills:["investigar","comunicar","prompting"], tools:["ia","chatgpt","gemini","perplexity"],
+  keywords:["vocabulario técnico","glosario","obra","hormigón","certificado de avance","dirección de obra","lenguaje claro","compradores en pozo"],
+  description:"Empezás a trabajar en una constructora sin conocer el rubro y tenés que informar a quienes compraron departamentos cómo avanza la obra. Usá la IA para entender cómo funciona la construcción, armar un glosario con los términos técnicos y explicar en palabras simples el informe del jefe de obra.",
+  video:{ caso:"https://youtu.be/m3qpPbYtUxc", resolucion:"" },
+  context:"Acabás de entrar a Constructora Aldaba, una empresa de Córdoba que está levantando el Edificio Los Aromos: planta baja y 4 pisos, 12 departamentos vendidos en pozo. Vas a ocupar el puesto de administración y comunicación: atender a los compradores y escribirles la novedad mensual de obra. El problema es que venís de otro rubro, y los papeles de la obra están llenos de palabras como losa s/4.º, H-21, orden de servicio, fondo de reparo o certificado n.º 18. Sergio, el socio gerente, te dejó una carpeta con los documentos de una semana normal y el glosario que armó Martina, la persona que estaba antes que vos (nadie lo revisó).",
+  challenge:"Usá la IA como asistente para ponerte al día con el sector, arrancando por una pregunta grande: ¿qué necesito saber de la construcción para hacer bien mi trabajo? Con ese mapa, leé la carpeta de obra, detectá el vocabulario técnico y armá un glosario en lenguaje claro, verificando cada definición contra cómo se usa el término en los documentos. Revisá también el glosario de Martina. Por último, convertí el parte de avance del jefe de obra en la novedad de septiembre para los compradores. Ojo: la IA puede definir con mucha seguridad términos que en Argentina significan otra cosa.",
+  deliverables:[
+    "Un mapa del sector en una página: etapas de obra, quién es quién, documentos, plata, riesgos y qué importa en tu puesto",
+    "Un glosario de al menos 30 términos de la carpeta, por categoría, con definición en lenguaje claro y documento donde aparece",
+    "La revisión del glosario de Martina: qué definiciones están mal y por qué",
+    "El borrador de la novedad de septiembre para compradores (máximo 220 palabras)"
+  ],
+  practice:[
+    "Usar la IA para investigar un sector desconocido partiendo de preguntas amplias",
+    "Pedir definiciones con contexto (país, rubro, uso en el documento)",
+    "Detectar alucinaciones y regionalismos, y verificar con fuentes",
+    "Traducir lenguaje técnico a lenguaje claro sin perder precisión",
+    "Comunicar un atraso con honestidad y sin prometer lo que no está confirmado"
+  ],
+  resources:[
+    { name:"Edificio Los Aromos - Prompteá para entender el lenguaje de la construcción.pdf", type:"Material de trabajo", meta:"PDF · 10 documentos de obra · 6 páginas",
+      kind:"material", url:"https://drive.google.com/file/d/1SitBXDRgfbeqnBKgBjWr1VP9-wwr3u7o/view?usp=sharing" },
+    { name:"Promptbook - Prompteá para entender el lenguaje de la construcción.pdf", type:"Promptbook", meta:"PDF · 9 prompts paso a paso",
+      kind:"prompt", url:"https://drive.google.com/file/d/1CkzEUdwCampuIJGRlybnzy6aNMSVOkgn/view?usp=drive_link" }
+  ],
+  hints:[
+    "No arranques por el glosario: primero pedile a la IA el panorama del sector (etapas, roles, documentos, plata y riesgos). Con ese mapa en la cabeza, la carpeta se entiende mucho mejor.",
+    "Cuando pidas definiciones, aclarale que es una obra en Argentina y pasale la frase donde aparece el término. Una definición es buena si encaja con esa frase. Si la IA usa palabras como \"colado\" o \"trabe\", está pensando en otro país.",
+    "En el glosario de Martina, desconfiá de las definiciones que parecen obvias para alguien de afuera del rubro. Buscá cada término en la carpeta: el contexto (por ejemplo, un resultado de ensayo en MPa) te dice si la definición cierra o no."
+  ],
+  prompt:"Empiezo a trabajar en administración y comunicación de una constructora de Córdoba, Argentina, que hace edificios de departamentos. Vengo de otro rubro. Voy a atender a compradores de departamentos en pozo y a escribir novedades mensuales de obra. ¿Qué necesito saber del sector de la construcción para hacer bien mi trabajo? Organizalo en: etapas de una obra, quién es quién, qué documentos se usan, cómo se mueve la plata, qué suele complicar y qué me importa en mi puesto. Usá vocabulario de Argentina.",
+  solution:{
+    approach:"Se arranca con una pregunta amplia a la IA para armar un mapa del sector (etapas, roles, documentos, plata, riesgos y foco del puesto). Con ese mapa se lee la carpeta documento por documento: se listan los términos técnicos y las siglas, se definen en lenguaje claro con contexto argentino y cada definición se contrasta con el uso real en los documentos. Con el mismo criterio se revisa el glosario heredado (4 de sus 14 definiciones están mal). Por último, el parte del jefe de obra se traduce a una novedad para compradores usando solo sus datos.",
+    decisions:[
+      "Empezar por el panorama del sector y recién después ir al vocabulario, para entender cada término dentro del proceso de obra",
+      "Pedir siempre definiciones con contexto: Argentina, obra de edificio y la frase donde aparece el término",
+      "Validar cada definición contra la carpeta: H-21 junto a \"23,4 MPa, cumple\" desarma la definición de \"21 bolsas de cemento\"",
+      "Corregir las 4 definiciones erróneas del glosario heredado (carpeta, desencofrar, H-21 y fondo de reparo)",
+      "En la novedad, contar el atraso con sus causas y repetir la fecha de posesión tal como la dice el jefe de obra, sin prometer otra"
+    ],
+    goldcopy:{ name:"GoldCopy - Prompteá para entender el lenguaje de la construcción.pdf", type:"Archivo resuelto",
+               url:"https://drive.google.com/file/d/1uo7KDH4JDGDRUAESPFcfzA85uR9g_ru4/view?usp=drive_link" }
   }
 },
 ];

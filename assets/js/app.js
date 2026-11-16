@@ -171,7 +171,7 @@ function videoBlock(url, ph){
   const src = toEmbed(url);
   // Si no hay link, no se muestra ningún reproductor (ni cuadro "próximamente").
   return src
-    ? `<div class="video-ph video-ph--filled"><iframe src="${esc(src)}" title="${esc(ph)}" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
+    ? `<div class="video-ph video-ph--filled"><iframe src="${esc(src)}" title="${esc(ph)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>`
     : "";
 }
 
