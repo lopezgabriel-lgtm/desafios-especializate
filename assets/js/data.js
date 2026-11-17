@@ -498,7 +498,7 @@ const CHALLENGES = [
 {
   id:"construccion-vocabulario-obra",
   title:"Prompteá para entender el lenguaje de la construcción",
-  sector:"construccion", course:"introduccion-ia", difficulty:"inicial", duration:45,
+  sector:"construccion", course:"introduccion-ia", difficulty:"inicial", duration:15,
   skills:["investigar","comunicar","prompting"], tools:["ia","chatgpt","gemini","perplexity"],
   keywords:["vocabulario técnico","glosario","obra","hormigón","certificado de avance","dirección de obra","lenguaje claro","compradores en pozo"],
   description:"Empezás a trabajar en una constructora sin conocer el rubro y tenés que informar a quienes compraron departamentos cómo avanza la obra. Usá la IA para entender cómo funciona la construcción, armar un glosario con los términos técnicos y explicar en palabras simples el informe del jefe de obra.",
